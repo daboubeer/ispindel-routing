@@ -4,7 +4,7 @@ import javax.enterprise.context.ApplicationScoped;
 
 import org.apache.camel.builder.RouteBuilder;
 
-import static org.apache.camel.LoggingLevel.DEBUG;
+import static org.apache.camel.LoggingLevel.INFO;
 
 @ApplicationScoped
 public class MQTTRoute extends RouteBuilder {
@@ -12,7 +12,7 @@ public class MQTTRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
         // from("paho-mqtt5:{{consumer.topic}}?brokerUrl={{broker.url}}")
-        from("paho:{{consumer.topic}}?brokerUrl={{broker.url}}").log(DEBUG, "Topic: ${header.CamelMqttTopic}, ${body}");
+        from("paho:{{consumer.topic}}?brokerUrl={{broker.url}}").log(INFO, "Topic: ${header.CamelMqttTopic}, ${body}");
     }
 
 }

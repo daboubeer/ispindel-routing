@@ -6,7 +6,7 @@ TODO
 
 You can run your application in dev mode that enables live coding using:
 ```shell script
-./mvnw compile quarkus:dev -Dquarkus.args='Hello 2'
+./mvnw compile quarkus:dev
 ```
 
 > **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
@@ -24,7 +24,7 @@ The application is now runnable using `java -jar target/quarkus-app/quarkus-run.
 
 If you want to build an _über-jar_, execute the following command:
 ```shell script
-./mvnw package -Dquarkus.package.type=uber-jar
+./mvnw package
 ```
 
 The application, packaged as an _über-jar_, is now runnable using `java -jar target/*-runner.jar`.
