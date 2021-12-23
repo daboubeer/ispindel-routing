@@ -20,11 +20,13 @@ public class Application {
 
     public static void main(String... args) {
 
-        /* Any custom logic can be implemented here
-         * Here, we pass the value of the first argument to Quarkus CDI container so that it can be injected using
-         * @Inject @Named("greeting")
-         * And we pass the second argument as -durationMaxMessages which is the number of messages that the application
-         * will process before terminating */
+        /*
+         * Any custom logic can be implemented here Here, we pass the value of the first argument to Quarkus CDI
+         * container so that it can be injected using
+         * 
+         * @Inject @Named("greeting") And we pass the second argument as -durationMaxMessages which is the number of
+         * messages that the application will process before terminating
+         */
         List<String> filteredArgs = new ArrayList<>(args.length);
         if (args.length < 2) {
             LOG.warnf(

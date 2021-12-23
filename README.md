@@ -1,14 +1,12 @@
-# ispindel-routing Project
+# ispindel routing project
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
-
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+TODO
 
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
 ```shell script
-./mvnw compile quarkus:dev
+./mvnw compile quarkus:dev -Dquarkus.args='Hello 2'
 ```
 
 > **_NOTE:_**  Quarkus now ships with a Dev UI, which is available in dev mode only at http://localhost:8080/q/dev/.
@@ -47,10 +45,3 @@ You can then execute your native executable with: `./target/ispindel-routing-1.0
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/maven-tooling.
 
-## Provided Code
-
-### RESTEasy JAX-RS
-
-Easily start your RESTful Web Services
-
-[Related guide section...](https://quarkus.io/guides/getting-started#the-jax-rs-resources)
